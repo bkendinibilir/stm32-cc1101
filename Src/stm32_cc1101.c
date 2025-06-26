@@ -10,6 +10,8 @@
 CC1101_HandleTypeDef* cc1101;
 
 
+/* -- High Level Functions -------------------------------------------------------*/
+
 bool CC1101_Init(CC1101_HandleTypeDef* cc1101_handle) {
 	if (cc1101_handle == NULL) {
 		ERROR_LOG("CC1101 handle is NULL.\n");
