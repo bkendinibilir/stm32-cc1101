@@ -65,11 +65,11 @@ bool CC1101_ReadRegister(uint8_t reg, uint8_t *pData) {
 /* -- SPI Read and Write Functions -----------------------------------------------*/
 
 HAL_StatusTypeDef __CC1101_SPI_Read(uint8_t *addr, uint8_t *pData, uint16_t size) {
-    return __CC1101_SPI_Transfer(addr, pData, size, CC1101_SPI_OP_READ);
+	return __CC1101_SPI_Transfer(addr, pData, size, CC1101_SPI_OP_READ);
 }
 
 HAL_StatusTypeDef __CC1101_SPI_Write(uint8_t *addr, uint8_t *pData, uint16_t size) {
-    return __CC1101_SPI_Transfer(addr, pData, size, CC1101_SPI_OP_WRITE);
+	return __CC1101_SPI_Transfer(addr, pData, size, CC1101_SPI_OP_WRITE);
 }
 
 HAL_StatusTypeDef __CC1101_SPI_Transfer(uint8_t *addr, uint8_t *pData, uint16_t size, CC1101_SPI_OpType op) {

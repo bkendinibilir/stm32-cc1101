@@ -76,8 +76,6 @@ typedef enum {
 		} \
 	} while (0)
 
-
-
 /* -- Public Functions ---------------------------------------------------------*/
 
 bool CC1101_Init(CC1101_HandleTypeDef* cc1101_handle);
